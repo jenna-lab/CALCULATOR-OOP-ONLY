@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px red;     */
+    width: 100vw;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.calc-box{
+border: black solid 2px;
+width: 70vw;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.entrypoint{
+    /* border: blue 2px solid; */
+    font-weight: 1000;
+    width: 100%;
+}
+.top-part{
+    height: 10%;
+    font-size: 28px;
+    /* border: pink 2px solid; */
+}
+.result{
+    /* border: solid red 2px; */
+    background-color:hsl(224, 56%, 13%);
+    width: 100%;
+    height: 100px; 
+}
+.entrypoint{
+    /* border: yellow solid 2px; */
+    height: 70%;
+    border-radius: 5px;
+    background-color: hsl(224, 46%, 11%);
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "seven eight nine delete"" four five six plus" "one two three minus" "period zero slash times"" reset reset equals equals";
+}
+#buttons{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(221,14%,31%);
+    color: white;
+}
+  
+#display {
+    width: 100%; 
+    height: 20vh;  
+    font-size: 14px; 
+  }
